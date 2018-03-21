@@ -12,6 +12,23 @@ app.get('/', function(req, res){
   console.log("Hello World"); 
 });
 
+app.get('/staff', function(req, res){
+  res.render("staff.jade"); 
+  console.log("Staff page is now rendered"); 
+});
+
+app.get('/services', function(req, res){
+  res.render("services.jade"); 
+  console.log("Staff page is now rendered"); 
+});
+
+app.get('/academic', function(req, res){
+  res.render("academic.jade"); 
+  console.log("Academic Section page is now rendered"); 
+});
+
+
+
 
 app.listen(process.env.PORT || 3000, process.env.IP || "0.0.0.0", function(){
   console.log("It's running!");
