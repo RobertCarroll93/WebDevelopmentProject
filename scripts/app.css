@@ -1,0 +1,77 @@
+body {
+     background-color: grey;
+     text-align: center;
+     min-height:750px;
+}
+ .logo {
+     width: 60%;
+}
+ .logo-div{
+     text-align: center;
+     width: 20%;
+     margin-left: auto;
+     margin-right: auto;
+     float: left;
+}
+ .nav{
+     text-align: center;
+     width: 80%;
+     margin-left: 10%;
+     margin-right: auto;
+     float: left;
+     margin-bottom: 10px;
+}
+ .header {
+     text-align: center;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
+}
+/* Styling for the top navigation div */
+ .topnav {
+     background-color: white;
+     overflow: auto;
+}
+/* Styling for navigation links */
+ .topnav a {
+     float: left;
+     color: black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     margin-top: 6.7%;
+     margin-left:4%;
+}
+/* Changes colour of a link when cursor is over it */
+ .topnav a:hover {
+     background-color: lightgrey;
+     color: black;
+}
+ .contact-info{
+     float:right;
+     margin-right:1.5%;
+}
+/* Colours the link that currently on screen */
+ .topnav a.active {
+     background-color: #4CAF50;
+     color: white;
+}
+ .row {
+     display: -webkit-flex;
+     display: inline-block;
+     width: 100%;
+}
+/* Styling for the footer */
+ .footer {
+     background-color: white;
+     text-align: center;
+     width:100%;
+     position: fixed;
+     bottom: 0px;
+     margin-left:0px;
+}
+ .footer p{
+     color: black;
+}
+
