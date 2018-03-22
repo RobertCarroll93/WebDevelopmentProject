@@ -42,6 +42,18 @@ body {
      font-size: 17px;
      margin-top: 6.7%;
      margin-left:4%;
+
+	
+}
+.topnav .contact-anchor{
+	float: left;
+     color: black;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+     margin-top: 5.1%;
+     margin-left:4%;
 }
 /* Changes colour of a link when cursor is over it */
  .topnav a:hover {
@@ -75,3 +87,37 @@ body {
      color: black;
 }
 
+ .mainpic{
+	 width: 100%;
+	 height: auto;
+ }
+ .mainpicdiv .button1{
+	   position: absolute;
+  top: 40%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+ }
+ .mainpicdiv .button2{
+	   position: absolute;
+  top: 55%;
+  left: 77%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 37px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  text-decoration: none;
+ }

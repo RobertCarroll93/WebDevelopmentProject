@@ -12,6 +12,11 @@ app.get('/', function(req, res){
   console.log("Hello World"); 
 });
 
+app.get('/index', function(req, res){
+  res.render("index.jade"); 
+  console.log("Hello World"); 
+});
+
 app.get('/staff', function(req, res){
   res.render("staff.jade"); 
   console.log("Staff page is now rendered"); 
