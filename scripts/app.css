@@ -1,5 +1,5 @@
 body {
-     background-color: grey;
+     background-color: lightgrey;
      text-align: center;
      min-height:750px;
 }
@@ -52,7 +52,7 @@ body {
      padding: 14px 16px;
      text-decoration: none;
      font-size: 17px;
-     margin-top: 5.1%;
+     margin-top: 3.9%;
      margin-left:4%;
 }
 /* Changes colour of a link when cursor is over it */
@@ -63,6 +63,10 @@ body {
  .contact-info{
      float:right;
      margin-right:1.5%;
+	 border-radius:  0px 0px 15px 15px ;
+	 background-color: lightblue;
+	 padding: 7px 8px;
+	 
 }
 /* Colours the link that currently on screen */
  .topnav a.active {
@@ -121,3 +125,190 @@ body {
   border-radius: 5px;
   text-decoration: none;
  }
+	
+ .map{
+	 float:right;
+ }
+ 
+ .contact-left{
+	 float:left;
+	 width:40%;
+	 height:auto;
+	 margin-bottom:10%;
+	 margin-left:10%;
+	 
+ }
+ .contact-left h2{
+	 float:left;
+	 
+ }
+
+ 
+ .contact-right{
+	 width:30%;
+	float:right;
+	margin-top: 8%;
+	margin-right: 12%;
+	/*border: 1px solid black;
+	padding:2%;*/
+	background-color:lightgrey;
+	
+	
+ }
+ /*Next three blocks come from https://www.w3schools.com/howto/howto_css_contact_form.asp
+ /* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+	float:left;
+    width: 55%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
+	clear: both;
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	float:left;
+    background-color: lightblue;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	clear:both;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #718BFF;
+}
+.option{
+	width: 58.5%;
+}
+.contact-banner{
+	width:100%;
+	height:auto;
+}
+
+
+
+
+/* https://www.w3schools.com/howto/howto_css_team.asp
+following code (eight block) is based on code from the above source */
+
+/* Three columns side by side */
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+    .column {
+        width: 100%;
+        display: block;
+    }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+    padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.title {
+    color: grey;
+}
+
+.button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+
+
+
+
+/* https://www.w3schools.com/howto/howto_js_popup.asp 
+template taken from above source and altered for this app (next six blocks) */
+
+.contact-info {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* The popup */
+.contact-info .popuptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: -130%;
+    left: 36%;
+    margin-left: 10px;
+	 font-size: 12px;
+}
+
+/* Popup arrow */
+.contact-info .popuptext::after {
+	transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: -14%;
+    left: 13%;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggles the popup being shown */
+.contact-info .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Adds fade to the popup */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}

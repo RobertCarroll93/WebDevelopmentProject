@@ -10,7 +10,9 @@ html
         .topnav
           .logo-div
             img.logo(alt='Oakfield Health', src='logo.png')
-          .contact-info Phone: 046905467388 &nbsp&nbsp&nbsp Email: oakfield@health.ie
+          .contact-info(onclick='functions.moreInfo()')
+            | Phone: 046905467388 &nbsp&nbsp&nbsp Email: oakfield@health.ie
+            span#myPopup.popuptext Click on Contact Us for more info
           a(href='/index') Home
           a(href='/services') Services
           a(href='/staff') Staff

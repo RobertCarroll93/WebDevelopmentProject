@@ -32,6 +32,11 @@ app.get('/academic', function(req, res){
   console.log("Academic Section page is now rendered"); 
 });
 
+app.get('/contact', function(req, res){
+  res.render("contact.jade"); 
+  console.log("Contact Us page is now rendered"); 
+});
+
 
 
 
